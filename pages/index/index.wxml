@@ -1,0 +1,28 @@
+<view class="index">
+  <view class="index-main">
+    <swiper bindchange='swiper'>
+ 
+      <swiper-item id="index-intro">
+       
+        <view class="index-intro__title h2">
+          欢迎参加年会
+        </view>
+        <view class="index-intro__detail">
+          <text></text>
+        
+        </view>
+       
+       <input  class="index-intro__detail" placeholder-class = "input-placeholder"  type = "text" placeholder = "请输入你的姓名" bindinput="bindNameInput"></input>
+        <input  class="index-intro__detail" placeholder-class = "input-placeholder"  type = "number" placeholder = "请输入你的电话" bindinput="bindPhoneInput"></input>
+        <input  class="index-intro__detail" placeholder-class = "input-placeholder"  type = "text" placeholder = "请输入你的分舵" bindinput="bindFenduoInput"></input>
+        <view
+          class="index-intro__btn btn btn-danger btn-md"
+          bindtap="signAction"
+          >
+          签到
+        </view>
+      </swiper-item>
+
+    </swiper>
+  </view>
+</view>
